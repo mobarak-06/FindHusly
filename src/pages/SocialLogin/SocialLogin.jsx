@@ -3,9 +3,18 @@ import { FcGoogle } from "react-icons/fc";
 import { RxGithubLogo } from "react-icons/rx";
 import { AuthContext } from "../../providers/AuthProvider";
 const SocialLogin = () => {
-    const {googleLogin} = useContext(AuthContext);
+    const {googleLogin, githubLogin} = useContext(AuthContext);
     const handleGoogle = () =>{
         googleLogin()
+        .then(result => {
+            console.log(result.user);
+        })
+        .catch(error => {
+            console.error(error)
+    })
+    }
+    const handleGithub = () =>{
+        githubLogin()
         .then(result => {
             console.log(result.user);
         })
@@ -21,7 +30,7 @@ const SocialLogin = () => {
           <FcGoogle className="mt-1" size={20} />
           <span className="font-semibold text-lg">Google</span>
         </button>
-        <button className=" flex gap-1 btn btn-outline btn-secondary w-32 py-2 px-4 rounded-lg">
+        <button onClick={handleGithub} className=" flex gap-1 btn btn-outline btn-secondary w-32 py-2 px-4 rounded-lg">
           <RxGithubLogo className="mt-1" size={20} />
           <span className="font-semibold text-lg">Github</span>
         </button>
