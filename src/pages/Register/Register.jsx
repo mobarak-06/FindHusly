@@ -26,6 +26,7 @@ const Register = () => {
     <div>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col ">
+        <h1 className="text-5xl font-bold">Register now!</h1>
           <div className="card bg-base-100 md:w-[450px]  shrink-0 shadow-2xl">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const {singIn} = useContext(AuthContext);
@@ -77,8 +78,9 @@ const Login = () => {
                   Register
                 </Link>
               </p>
-              <p className="divider">Continue With</p>
+              {/* <p className="divider">Continue With</p> */}
             </form>
+            <SocialLogin/>
           </div>
         </div>
       </div>
