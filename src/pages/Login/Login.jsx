@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const {singIn} = useContext(AuthContext);
@@ -19,6 +20,7 @@ const Login = () => {
       singIn(email, password)
       .then(result => {
         console.log(result.user);
+        toast.success("Login SuccessFully")
       })
       .catch(error => {
         console.error(error);
@@ -78,7 +80,6 @@ const Login = () => {
                   Register
                 </Link>
               </p>
-              {/* <p className="divider">Continue With</p> */}
             </form>
             <SocialLogin/>
           </div>

@@ -2,12 +2,14 @@ import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { RxGithubLogo } from "react-icons/rx";
 import { AuthContext } from "../../providers/AuthProvider";
+import toast from "react-hot-toast";
 const SocialLogin = () => {
     const {googleLogin, githubLogin} = useContext(AuthContext);
     const handleGoogle = () =>{
         googleLogin()
         .then(result => {
-            console.log(result.user);
+          console.log(result.user);
+          toast.success("Login SuccessFully")
         })
         .catch(error => {
             console.error(error)
@@ -17,6 +19,7 @@ const SocialLogin = () => {
         githubLogin()
         .then(result => {
             console.log(result.user);
+            toast.success("Login SuccessFully")
         })
         .catch(error => {
             console.error(error)
