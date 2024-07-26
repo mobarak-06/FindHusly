@@ -13,12 +13,12 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <div data-aos="fade-up" data-aos-duration="1500" className="mt-20">
+      <div data-aos="fade-up" data-aos-duration="1500" className="mt-20 mx-10 md:mx-14 lg:mx-24">
         <div className="text-center">
           <p className="text-xl text-red-500">Featured Properties</p>
           <h1 className="text-4xl font-semibold mt-6">Recommended For You</h1>
         </div>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {property.map((item) => (
             <SingleProperty key={item.id} property={item} />
           ))}

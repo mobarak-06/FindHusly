@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <div className="w-full  bg-black">
+    <div className="w-full  bg-black px-10 md:px-14 lg:px-24">
       <div className="flex justify-between pt-16">
         <a>
           <p className="text-3xl font-bold bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent">
@@ -56,6 +56,7 @@ const Footer = () => {
                 <MdOutlineMailOutline size={20} /> themesflat@gmail.com
               </p>
             </aside>
+
             <nav>
               <h6 className="footer-title text-white">Categories</h6>
               <a className="link link-hover text-gray-400">Pricing Plans</a>
