@@ -1,17 +1,19 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import toast from "react-hot-toast";
+import { IoMdEye, IoMdEyeOff  } from "react-icons/io";
 
 const Login = () => {
   const {singIn} = useContext(AuthContext);
+  const [loginError, setLoginError] = useState(null);
+  const [showEye, setShowEye] = useState(false);
 
   const {
     register,
     handleSubmit,
-    formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
     const { email, password } = data;
@@ -24,6 +26,7 @@ const Login = () => {
       })
       .catch(error => {
         console.error(error);
+        setLoginError(error.message);
       })
     
   };
@@ -59,12 +62,18 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="password"
+                  type={showEye ? "text" : "password"}
                   placeholder="password"
                   className="input input-bordered"
                   required
                   {...register("password")}
                 />
+                <span className="absolute top-44 right-10" onClick={() => setShowEye(!showEye)}>
+                  {
+                    showEye ? <IoMdEyeOff size={20}/> : <IoMdEye size={20}/>
+                  }
+                </span>
+                {loginError && <h1 className="text-red-500">{loginError}</h1>}
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?

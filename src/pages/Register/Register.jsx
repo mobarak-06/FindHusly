@@ -1,10 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import toast from "react-hot-toast";
+import { IoMdEye, IoMdEyeOff  } from "react-icons/io";
 
 const Register = () => {
   const {createUser, userUpdateProfile} = useContext(AuthContext);
+  const [showEye, setShowEye] = useState(false);
   const {
     register,
     handleSubmit,
@@ -17,6 +20,7 @@ const Register = () => {
     createUser(email, password)
     .then(result => {
       console.log(result.user);
+      toast.success("Registration Completed !")
       userUpdateProfile(name,photoUrl)
             .then(() =>{
                 console.log('profile updated');
@@ -73,12 +77,18 @@ const Register = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="password"
+                  type={showEye ? "text" : "password"}
                   placeholder="password"
                   className="input input-bordered"
                   required
-                  {...register("password")}
+                  {...register("password", { pattern: /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/ })}
                 />
+                <span className="absolute top-[358px] right-10" onClick={() => setShowEye(!showEye)}>
+                  {
+                    showEye ? <IoMdEyeOff size={20}/> : <IoMdEye size={20}/>
+                  }
+                </span>
+                {errors.password && <span className="text-red-500">Password Must Be 6 Characters, One Letter Must Uppercase And Lowercase</span>}
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
