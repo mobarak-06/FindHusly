@@ -3,13 +3,19 @@ import { FcGoogle } from "react-icons/fc";
 import { RxGithubLogo } from "react-icons/rx";
 import { AuthContext } from "../../providers/AuthProvider";
 import toast from "react-hot-toast";
+import { useLocation, useNavigate } from "react-router-dom";
 const SocialLogin = () => {
     const {googleLogin, githubLogin} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log(location);
     const handleGoogle = () =>{
         googleLogin()
         .then(result => {
           console.log(result.user);
           toast.success("Login SuccessFully")
+          // navigate after login
+          navigate(location?.state ? location.state : "/");
         })
         .catch(error => {
             console.error(error)
@@ -20,6 +26,8 @@ const SocialLogin = () => {
         .then(result => {
             console.log(result.user);
             toast.success("Login SuccessFully")
+            // navigate after login
+            navigate(location?.state ? location.state : "/");
         })
         .catch(error => {
             console.error(error)

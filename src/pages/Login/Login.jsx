@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -10,6 +10,8 @@ const Login = () => {
   const {singIn} = useContext(AuthContext);
   const [loginError, setLoginError] = useState(null);
   const [showEye, setShowEye] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const {
     register,
@@ -23,6 +25,8 @@ const Login = () => {
       .then(result => {
         console.log(result.user);
         toast.success("Login SuccessFully")
+        // navigate after login
+        navigate(location?.state ? location.state : "/");
       })
       .catch(error => {
         console.error(error);

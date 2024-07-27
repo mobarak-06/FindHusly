@@ -3,29 +3,31 @@ import { useLoaderData, useParams } from "react-router-dom";
 import scale from "../../assets/ruler.png";
 
 const PropertyDetails = () => {
-    const properties = useLoaderData();
-    console.log(properties);
-  
-    const {id} = useParams();
-    const property = properties.find(item => item.id === id);
-     
-    console.log(property);
+  const properties = useLoaderData();
+  // const locations = useLocation();
+  // console.log(locations);
+  console.log(properties);
 
-    const {
-        image,
-        estate_title,
-        description,
-        location,
-        facilities,
-        status,
-        segment_name,
-        area,
-        price
-      } = property;
-    
-    return (
-        <div>
-             <div className="card bg-base-100 relative">
+  const { id } = useParams();
+  const property = properties.find((item) => item.id === id);
+
+  console.log(property);
+
+  const {
+    image,
+    estate_title,
+    description,
+    location,
+    facilities,
+    status,
+    segment_name,
+    area,
+    price,
+  } = property;
+
+  return (
+    <div className="mt-10 mx-10 md:mx-14 lg:mx-24">
+      <div className="card bg-base-100 relative">
         <figure>
           <img className="h-[500px] w-full" src={image} alt="Shoes" />
         </figure>
@@ -37,11 +39,11 @@ const PropertyDetails = () => {
             {location}
           </p>
           <div>
-            <p className="font-semibold">
-              facilities:
-            </p>
+            <p className="font-semibold">facilities:</p>
             <ul className="list-disc ml-16">
-            {facilities.map((item, idx) => <li key={idx}>{item}</li>)}
+              {facilities.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
             </ul>
           </div>
           <p className="bg-sky-500 text-white py-2 px-4 rounded-lg w-24 absolute top-2 left-2">
@@ -62,8 +64,8 @@ const PropertyDetails = () => {
           </div>
         </div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default PropertyDetails;

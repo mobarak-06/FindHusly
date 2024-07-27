@@ -22,7 +22,7 @@ export const Router = createBrowserRouter([
       {
         path: "/properties",
         element: <Properties></Properties>,
-        loader: () => fetch("public/residensial.json"),
+        loader: () => fetch("/residensial.json"),
       },
       {
         path: "/login",
@@ -39,7 +39,7 @@ export const Router = createBrowserRouter([
             <PropertyDetails />
           </PrivateRoute>
         ),
-        loader: () => fetch("public/residensial.json"),
+        loader: () => fetch("/residensial.json"),
       },
     ],
   },
