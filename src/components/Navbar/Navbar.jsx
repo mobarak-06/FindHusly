@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import Home_Icon from "../../assets/home-sign-icon-front-side-white-background.jpg";
+import Home_Icon from "/clipart2010871.png";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import nullProfile from "../../assets/nullprofile.png"
@@ -91,8 +91,8 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="flex ">
-            <img className="w-14" src={Home_Icon} alt="" />
+          <a className="flex gap-1">
+            <img className="w-12" src={Home_Icon} alt="" />
             <p className="text-3xl font-bold mt-3 bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent">
               FindHusly
             </p>
@@ -119,7 +119,7 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm  bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
                 <li>
                   <a className="justify-between">{user?.displayName}</a>

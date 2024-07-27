@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import toast from "react-hot-toast";
 import { IoMdEye, IoMdEyeOff  } from "react-icons/io";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const {singIn} = useContext(AuthContext);
@@ -37,6 +38,9 @@ const Login = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>FindHusly | Login</title>
+      </Helmet>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">

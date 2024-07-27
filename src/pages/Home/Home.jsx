@@ -4,6 +4,7 @@ import SingleProperty from "../State/SingleProperty";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const property = useLoaderData();
@@ -12,6 +13,9 @@ const Home = () => {
   },[])
   return (
     <div>
+      <Helmet>
+        <title>FindHusly | Home</title>
+      </Helmet>
       <Banner />
       <div data-aos="fade-up" data-aos-duration="1500" className="mt-20 mx-10 md:mx-14 lg:mx-24">
         <div className="text-center">

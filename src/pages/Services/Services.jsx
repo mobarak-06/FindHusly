@@ -2,12 +2,16 @@ import houseSell from "../../assets/house-sell.png";
 import houseRent from "../../assets/house-rent.png";
 import houseBuy from "../../assets/house-buy.png";
 import 'animate.css';
+import { Helmet } from "react-helmet-async";
 const Services = () => {
   return (
-    <div className="mt-20 mx-20 md:mx-14 lg:mx-24">
+    <div className="pt-20 px-20 md:px-14 lg:px-24 bg-slate-200 pb-10">
+        <Helmet>
+        <title>FindHusly | Services</title>
+      </Helmet>
       <h3 className="text-red-500 text-xl">Our Services</h3>
       <h1 className="text-5xl font-medium">What We Do?</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 mt-16 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 mt-16 ">
         <div className="w-96">
           <img className="w-20 animate__animated animate__flipInY " src={houseBuy} alt="" />
           <h1 className="mt-10 text-2xl font-semibold">Buy A New Home</h1>

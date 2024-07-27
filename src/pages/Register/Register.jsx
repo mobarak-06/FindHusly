@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import toast from "react-hot-toast";
 import { IoMdEye, IoMdEyeOff  } from "react-icons/io";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const {createUser, userUpdateProfile} = useContext(AuthContext);
@@ -33,6 +34,9 @@ const Register = () => {
   }
   return (
     <div>
+      <Helmet>
+        <title>FindHusly | Register</title>
+      </Helmet>
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col ">
         <h1 className="text-5xl font-bold">Register now!</h1>

@@ -1,6 +1,7 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { useLoaderData, useParams } from "react-router-dom";
 import scale from "../../assets/ruler.png";
+import { Helmet } from "react-helmet-async";
 
 const PropertyDetails = () => {
   const properties = useLoaderData();
@@ -27,6 +28,9 @@ const PropertyDetails = () => {
 
   return (
     <div className="mt-10 mx-10 md:mx-14 lg:mx-24">
+      <Helmet>
+        <title>FindHusly | PropertyDetails</title>
+      </Helmet>
       <div className="card bg-base-100 relative">
         <figure>
           <img className="h-[500px] w-full" src={image} alt="Shoes" />
