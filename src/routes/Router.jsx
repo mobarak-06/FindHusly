@@ -7,6 +7,7 @@ import Register from "../pages/Register/Register";
 import Properties from "../pages/State/Properties";
 import PropertyDetails from "../pages/State/PropertyDetails";
 import PrivateRoute from "./PrivateRoute";
+import Services from "../pages/Services/Services";
 
 export const Router = createBrowserRouter([
   {
@@ -41,6 +42,12 @@ export const Router = createBrowserRouter([
         ),
         loader: () => fetch("/residensial.json"),
       },
+      {
+        path: "/services",
+        element: <PrivateRoute>
+          <Services/>
+        </PrivateRoute>
+      }
     ],
   },
 ]);
