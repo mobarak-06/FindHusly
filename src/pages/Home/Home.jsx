@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import LocationSlider from "../../components/LocationSlider/LocationSlider";
+import Benifit from "../../components/Benifit/Benifit";
 
 const Home = () => {
   const property = useLoaderData();
@@ -49,12 +50,13 @@ const Home = () => {
         </div>
       </div>
       <div
-        className="mt-20 mx-10 md:mx-14 lg:mx-24"
+        className="mx-10 md:mx-14 lg:mx-24"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
         <LocationSlider />
       </div>
+      <Benifit/>
     </div>
   );
 };
