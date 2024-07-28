@@ -3,6 +3,7 @@ import SingleProperty from "./SingleProperty";
 import { useLoaderData } from "react-router-dom";
 const Properties = () => {
   const property = useLoaderData();
+  
 
   return (
     <div className="mt-10 mx-10 md:mx-14 lg:mx-24">
