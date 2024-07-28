@@ -7,7 +7,7 @@ const PrivateRoute = ({ children }) => {
   const location = useLocation();
 
   if (loading) {
-    return <span className="loading loading-bars loading-lg"></span>;
+    return <span className="loading loading-bars loading-lg my-56 ml-56 lg:ml-[750px]"></span>;
   }
 
   if (user) {

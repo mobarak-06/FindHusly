@@ -6,7 +6,7 @@ const Properties = () => {
   
 
   return (
-    <div className="mt-10 mx-10 md:mx-14 lg:mx-24">
+    <div className="mt-10 mb-10 mx-10 md:mx-14 lg:mx-24">
       <Helmet>
         <title>FindHusly | Properties</title>
       </Helmet>
