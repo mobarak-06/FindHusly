@@ -3,6 +3,7 @@ import Home_Icon from "/clipart2010871.png";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import nullProfile from "../../assets/nullprofile.png"
+import UpdateProfileModal from "../UpdateProfileModal/UpdateProfileModal";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   console.log(user);
@@ -125,7 +126,10 @@ const Navbar = () => {
                   <a className="justify-between">{user?.displayName}</a>
                 </li>
                 <li>
-                  <a className="justify-between">Update Profile</a>
+                  <a className="justify-between">{user?.email}</a>
+                </li>
+                <li>
+                  <UpdateProfileModal/>
                 </li>
                 <li>
                   <a onClick={handleSignOut}>Logout</a>

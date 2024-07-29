@@ -10,7 +10,7 @@ const Benifit = () => {
        <h1 className="text-5xl font-medium mt-3">Why Choose FindHusly</h1>
        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 mt-16 ">
-          <div className="w-96 text-center">
+          <div className="w-96 text-center border border-red-500">
             <img
               className="w-20 animate__animated animate__flipInY mx-auto"
               src={certificate}
