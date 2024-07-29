@@ -56,8 +56,10 @@ const Home = () => {
       >
         <LocationSlider />
       </div>
-      <div data-aos="fade-left" data-aos-duration="1500">
-        <Benifit />
+      <div
+        
+      >
+        <Benifit></Benifit>
       </div>
     </div>
   );
