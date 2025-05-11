@@ -31,7 +31,7 @@ const Banner = () => {
             <div
               className="hero min-h-screen"
               style={{
-                backgroundImage: "url(https://i.ibb.co/FzLFHWL/backgroung-Image1.jpg)",
+                backgroundImage: "url(https://i.ibb.co.com/ynDCxbLV/150826.jpg)",
               }}
             >
               <div className="hero-overlay bg-opacity-50"></div>
@@ -51,7 +51,7 @@ const Banner = () => {
             <div
               className="hero min-h-screen"
               style={{
-                backgroundImage: "url(https://i.ibb.co/fxqZyDq/background-Image2.jpg)",
+                backgroundImage: "url(https://i.ibb.co.com/DPN38JrN/2150799627.jpg)",
               }}
             >
               <div className="hero-overlay bg-opacity-50"></div>
@@ -71,7 +71,7 @@ const Banner = () => {
             <div
               className="hero min-h-screen"
               style={{
-                backgroundImage: "url(https://i.ibb.co/vBbgXzX/background-Image3.jpg)",
+                backgroundImage: "url(https://i.ibb.co.com/9k9Z7v2X/3096.jpg)",
               }}
             >
               <div className="hero-overlay bg-opacity-50"></div>

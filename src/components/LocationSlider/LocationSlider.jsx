@@ -31,7 +31,7 @@ const LocationSlider = () => {
             className="hero w-[400px] h-[550px] rounded-xl"
             style={{
               backgroundImage:
-                "url(https://i.ibb.co/4Nc0h2v/eiffel-tower-as-famous-city-landmark-paris.jpg)",
+                "url(https://i.ibb.co.com/NgSGw3H6/50289.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-30 rounded-xl text-center ">
@@ -47,7 +47,7 @@ const LocationSlider = () => {
             className="hero w-[400px] h-[550px] rounded-xl"
             style={{
               backgroundImage:
-                "url(https://i.ibb.co/Wy8dchR/big-ben-houses-parliament-london-uk.jpg)",
+                "url(https://i.ibb.co.com/HLYmXcD2/1395.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-30 rounded-xl text-center ">
@@ -63,7 +63,7 @@ const LocationSlider = () => {
             className="hero w-[400px] h-[550px] rounded-xl"
             style={{
               backgroundImage:
-                "url(https://i.ibb.co/7Gm6L8V/toronto-cn-tower.jpg)",
+                "url(https://i.ibb.co.com/FkYMR9mR/3472.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-30 rounded-xl text-center ">
@@ -79,7 +79,7 @@ const LocationSlider = () => {
             className="hero w-[400px] h-[550px] rounded-xl"
             style={{
               backgroundImage:
-                "url(https://i.ibb.co/xHBsWQM/statue-liberty-liberty-island-new-york.jpg)",
+                "url(https://i.ibb.co.com/YB9rJ8gs/1559.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-30 rounded-xl text-center ">
@@ -95,7 +95,7 @@ const LocationSlider = () => {
             className="hero w-[400px] h-[550px] rounded-xl"
             style={{
               backgroundImage:
-                "url(https://i.ibb.co/RjnygMj/mesmerizing-shot-famous-historic-taj-mahal-agra-india.jpg)",
+                "url(https://i.ibb.co.com/FqkhFtLv/2151297159.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-30 rounded-xl text-center ">
@@ -111,7 +111,7 @@ const LocationSlider = () => {
             className="hero w-[400px] h-[550px] rounded-xl"
             style={{
               backgroundImage:
-                "url(https://i.ibb.co/gyTxkdJ/beautiful-rainbow-nature.jpg)",
+                "url(https://i.ibb.co.com/VY4kST92/18597.jpg)",
             }}
           >
             <div className="hero-overlay bg-opacity-30 rounded-xl text-center ">

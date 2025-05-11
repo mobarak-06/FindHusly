@@ -9,7 +9,7 @@
       "area": "2500 sq ft",
       "location": "123 Elm Street, Springfield",
       "facilities": ["living room", "swimming pool", "kitchen", "garage"],
-      "image": "https://i.ibb.co/341xmvt/3d-rendering-house-model-1.jpg",
+      "image": "https://i.ibb.co.com/hxYqKDvt/2224.jpg",
       "view_property": "https://example.com/properties/1"
     },
     {
@@ -22,7 +22,7 @@
       "area": "1800 sq ft",
       "location": "456 Main Street, Metropolis",
       "facilities": ["living room", "swimming pool", "kitchen", "gym", "roof deck"],
-      "image": "https://i.ibb.co/PYCgkwT/modern-spacious-room-with-large-panoramic-window.jpg",
+      "image": "https://i.ibb.co.com/276jT8Y0/31098.jpg",
       "view_property": "https://example.com/properties/2"
     },
     {
@@ -35,7 +35,7 @@
       "area": "1500 sq ft",
       "location": "789 Country Lane, Greenfield",
       "facilities": ["living room", "kitchen", "garden", "fireplace"],
-      "image": "https://i.ibb.co/fS9w2FR/photorealistic-house-with-wooden-architecture-timber-structure.jpg",
+      "image": "https://i.ibb.co.com/RKYpspr/2151918248.jpg",
       "view_property": "https://example.com/properties/3"
     },
     {
@@ -48,7 +48,7 @@
       "area": "3200 sq ft",
       "location": "101 Ocean Drive, Seaside",
       "facilities": ["living room", "swimming pool", "kitchen", "balcony", "private beach"],
-      "image": "https://i.ibb.co/0MH6hJz/photorealistic-wooden-house-with-timber-structure.jpg",
+      "image": "https://i.ibb.co.com/27N3YJTP/2151918234.jpg",
       "view_property": "https://example.com/properties/4"
     },
     {
@@ -61,7 +61,7 @@
       "area": "1400 sq ft",
       "location": "202 High Street, Cityville",
       "facilities": ["living room", "kitchen", "gym", "parking"],
-      "image": "https://i.ibb.co/Wpjzty7/modern-tall-glass-buildings-downtown.jpg",
+      "image": "https://i.ibb.co.com/W4WSbb3k/2149661456.jpg",
       "view_property": "https://example.com/properties/5"
     },
     {
@@ -74,7 +74,7 @@
         "area": "2200 sq ft",
         "location": "12 Maple Avenue, Suburbia",
         "facilities": ["living room", "swimming pool", "kitchen", "garage", "garden"],
-        "image": "https://i.ibb.co/Pz7cNZL/row-houses-bristol-england.jpg",
+        "image": "https://i.ibb.co.com/2075bjt3/8074.jpg",
         "view_property": "https://example.com/properties/6"
       },
       {
@@ -87,7 +87,7 @@
         "area": "3500 sq ft",
         "location": "303 Skyline Tower, Downtown",
         "facilities": ["living room", "swimming pool", "kitchen", "gym", "roof deck", "private elevator"],
-        "image": "https://i.ibb.co/tP2GQyT/modern-luxury-bedroom-suite-bathroom.jpg",
+        "image": "https://i.ibb.co.com/mr8HxmYQ/7289.jpg",
         "view_property": "https://example.com/properties/7"
       },
       {
@@ -100,7 +100,7 @@
         "area": "1800 sq ft",
         "location": "456 Pine Ridge, Mountainview",
         "facilities": ["living room", "kitchen", "fireplace", "deck"],
-        "image": "https://i.ibb.co/23S9RP0/big-hut-snow-shirakawago-japan.jpg",
+        "image": "https://i.ibb.co.com/BdTQjSb/20194.jpg",
         "view_property": "https://example.com/properties/8"
       }
   ]
