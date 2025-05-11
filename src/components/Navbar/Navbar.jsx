@@ -92,12 +92,12 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="flex gap-1">
+          <Link to="/" className="flex gap-1">
             <img className="w-12" src={Home_Icon} alt="" />
             <p className="text-3xl font-bold mt-3 bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent">
               FindHusly
             </p>
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
