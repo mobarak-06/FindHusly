@@ -1,8 +1,19 @@
-# React + Vite
+<H1>FindHusly</H1>
+<h2>Live_Link: <a href="https://real-state-assist-9.web.app">https://real-state-assist-9.web.app/</a></h2>
+<h3>Website Feature</h3>
+<ul>
+  <li>Navbar</li>
+  <li>Banner slider</li>
+  <li>Property Details</li>
+  <li>Property Location</li>
+  <li>Footer</li>
+</ul>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>npm packages</h3>
+<ul>
+  <li>Aos Package</li>
+  <li>Animate.css</li>
+  <li>React Hook Form</li>
+  <li>Swiper Slider</li>
+  <li>React icon</li>
+</ul>
