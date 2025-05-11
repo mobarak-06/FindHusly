@@ -1,5 +1,5 @@
 <H1>FindHusly</H1>
-<h2>Live_Link: <a href="https://real-state-assist-9.web.app">https://real-state-assist-9.web.app/</a></h2>
+<h2>Live_Link: <a href="https://real-state-assist-9.firebaseapp.com/">Live Link</a></h2>
 <h3>Website Feature</h3>
 <ul>
   <li>Navbar</li>
